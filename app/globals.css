@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+}
+
+/* Button */
+.ui-button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.ui-button-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.ui-button-secondary {
+  background-color: #e5e7eb;
+  color: black;
+}
+
+/* Card */
+.ui-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: white;
+}
+
+.ui-card-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Input */
+.ui-input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}

@@ -1,5 +1,5 @@
 type ButtonProps = {
-  label: string;
+  label?: string;
   variant?: "primary" | "secondary";
   onClick?: () => void;
 };

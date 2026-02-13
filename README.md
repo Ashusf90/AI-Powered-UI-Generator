@@ -57,7 +57,7 @@ Strict safety constraints
 
 The architecture intentionally separates planning, validation, rendering, and explanation into isolated layers to ensure correctness and reproducibility.
 
-🧠 Architecture Overview
+    Architecture Overview
 High-Level Flow
 
 User Input
@@ -68,11 +68,11 @@ User Input
 → Explainer Agent
 → Version Store
 
-🔁 Agent Design
+ Agent Design
 
 The system is structured as a multi-step agent pipeline:
 
-1️⃣ Planner Agent
+1️. Planner Agent
 
 Responsibility:
 
@@ -97,7 +97,7 @@ Output format:
   ]
 }
 
-2️⃣ Validator Layer
+2️. Validator Layer
 
 Before rendering, every plan is validated:
 
@@ -111,7 +111,7 @@ Invalid plan rejection
 
 This guarantees determinism.
 
-3️⃣ Incremental Rewrite Enforcement
+3️. Incremental Rewrite Enforcement
 
 To comply with the requirement:
 
@@ -127,7 +127,7 @@ The user must explicitly say "regenerate" or "rewrite"
 
 This ensures incremental reasoning and edit awareness.
 
-4️⃣ Renderer (Deterministic)
+4️. Renderer (Deterministic)
 
 The renderer does NOT evaluate arbitrary JSX.
 
@@ -149,7 +149,7 @@ Style injection
 
 Unauthorized component creation
 
-5️⃣ Explainer Agent
+5️. Explainer Agent
 
 After generation, the system produces a human-readable explanation:
 
@@ -161,7 +161,7 @@ What changed from previous version
 
 This makes the system transparent and debuggable.
 
-🧱 Deterministic Component System
+ Deterministic Component System
 
 The component library is fixed and immutable:
 
@@ -195,7 +195,7 @@ No AI-created components
 
 All styling is static and predefined.
 
-🔒 Safety & Validation
+ Safety & Validation
 
 The system includes:
 
@@ -211,7 +211,7 @@ Client-side error handling
 
 Controlled renderer (no eval)
 
-🗂 Versioning & Rollback
+ Versioning & Rollback
 
 Each successful generation is stored.
 
@@ -225,7 +225,7 @@ Restore explanation state
 
 This ensures reproducibility.
 
-🧪 Iteration Example
+ Iteration Example
 
 "Create dashboard"
 
@@ -259,7 +259,7 @@ Recursive plan rendering
 
 Plan diff enforcement
 
-📌 Mock Planner Note
+ Mock Planner Note
 
 Due to API quota limitations, the LLM layer was replaced with a deterministic rule-based planner for demonstration purposes.
 
@@ -267,7 +267,7 @@ The architecture remains fully LLM-compatible, and the agent layer can be re-ena
 
 The multi-step agent design, validation, rewrite enforcement, and rendering pipeline remain identical.
 
-🧠 Engineering Tradeoffs
+ Engineering Tradeoffs
 
 Chose deterministic JSON plans over direct JSX generation for safety.
 
@@ -277,7 +277,7 @@ Avoided dynamic styling for strict reproducibility.
 
 Implemented controlled rendering instead of code evaluation.
 
-🚀 Future Improvements
+ Future Improvements
 
 With additional time:
 
@@ -295,7 +295,7 @@ Model-based planner reactivation
 
 Structured explanation diffs
 
-🎥 Demo Guide
+ Demo Guide
 
 The demo shows:
 
@@ -311,7 +311,7 @@ Version rollback
 
 Explanation updates
 
-🎯 What This Project Demonstrates
+   What This Project Demonstrates
 
 Deterministic AI orchestration
 
@@ -325,7 +325,7 @@ Trustworthy AI design
 
 Engineering judgment under constraints
 
-📎 Setup Instructions
+    Setup Instructions
 npm install
 npm run dev
 

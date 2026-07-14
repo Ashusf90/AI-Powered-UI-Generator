@@ -4,7 +4,7 @@ An intelligent UI generation system that converts natural language prompts into 
 
 ## Live Demo
 
-https://ai-pdf-summary-1yyy.onrender.com
+https://ai-powered-ui-generator.vercel.app/
 
 ---
 

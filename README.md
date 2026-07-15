@@ -36,7 +36,7 @@ https://ai-powered-ui-generator.vercel.app/
 - Dynamic Rendering System
 
 ## Deployment
-- Render
+- Vercel
 
 ---
 
